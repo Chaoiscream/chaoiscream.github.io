@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+html {
+  font-family: "Poppins";
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+body {
+  height: 100vh;
+  font-family: "Poppins";
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: url("../images/background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.main {
+  font-family: "Poppins";
+  position: absolute;
+  top: 48%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+/* プロフィール画像*/
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-bottom: 2px;
+}
+
+.footer {
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #000000;
+  text-align: center;
+  padding: 5px;
+  background-color: #ffffff;
+  z-index: 3;
+}
+
+/* Navigation*/
+.nav {
+  font-family: "Poppins";
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  width: 200px;
+  background-color: #c7c7c7;
+  left: 0;
+  z-index: 3;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+/* link*/
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul li {
+  padding: 15px;
+  border-bottom: none;
+}
+
+.nav ul li a {
+  color: #4b4b4b;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+/*hover setting*/
+.nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #1d4eff;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: #000000;
+}
+
+.nav ul li a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.nav ul li a.active {
+  color: #1d4eff;
+}
+
+.nav-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.bio {
+  font-size: 14px;
+  font-family: "Poppins";
+  color: #000000;
+  line-height: 1.5;
+  margin: 20px 0;
+  padding: 10px;
+  text-align: left;
+}
